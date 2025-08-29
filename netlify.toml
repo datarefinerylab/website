@@ -1,0 +1,10 @@
+[build]
+command = "npm run build"
+publish = ".next"
+
+[build.environment]
+NODE_VERSION = "20"
+
+# Let Netlify handle Next.js (SSR, image optimization, routing)
+[[plugins]]
+package = "@netlify/plugin-nextjs"
